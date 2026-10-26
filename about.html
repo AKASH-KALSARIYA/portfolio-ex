@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Your Name</title>
+  <meta name="description" content="Creative frontend developer with a passion for typographic precision, fluid animations, and editorial web experiences." />
+  <meta name="author" content="Your Name" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/about" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">About</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Your Name</a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <ol class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ol>
+      </nav>
+      <a href="contact.html" class="nav-cta">
+        Let's talk
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+    <ol class="mobile-nav-list" role="list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link" aria-current="page">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ol>
+    <p class="mobile-nav-footer">your@email.com</p>
+  </nav>
+
+  <main id="main" class="main">
+
+    <!-- About Hero -->
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-hero-inner">
+        <div class="about-hero-left">
+          <div class="about-hero-eyebrow">
+            <span class="page-hero-label-line" aria-hidden="true"></span>
+            <span class="label">05 / 06 — About</span>
+          </div>
+          <h1 id="about-title" class="about-hero-title">Code &amp;<br />craft.</h1>
+          <p class="about-hero-text">
+            I'm a creative frontend developer who believes in the power of restraint. Not every element needs an animation — but the right animation, at the right moment, can make a site feel alive.<br /><br />
+            I work solo, end-to-end, on a carefully selected number of projects per year. From the first sketch to final deployment, every decision is mine. No agency overhead, no junior handoff.<br /><br />
+            Based remotely, available globally.
+          </p>
+        </div>
+        <div class="about-hero-right">
+          <div class="about-portrait-bg" role="img" aria-label="Portrait placeholder">
+            <div class="about-portrait-decor">
+              <p class="about-portrait-decor-label">Experience</p>
+              <p class="about-portrait-decor-value">5+ yrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="about-stats" aria-label="Career statistics">
+      <div class="about-stats-inner">
+        <div class="stat-item" data-reveal="true">
+          <p class="stat-value">40+</p>
+          <p class="stat-label">Projects shipped</p>
+        </div>
+        <div class="stat-item" data-reveal="true" style="transition-delay:0.1s">
+          <p class="stat-value">5+</p>
+          <p class="stat-label">Years experience</p>
+        </div>
+        <div class="stat-item" data-reveal="true" style="transition-delay:0.2s">
+          <p class="stat-value">20+</p>
+          <p class="stat-label">Happy clients</p>
+        </div>
+        <div class="stat-item" data-reveal="true" style="transition-delay:0.3s">
+          <p class="stat-value">∞</p>
+          <p class="stat-label">Coffees consumed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills / Stack -->
+    <section class="about-skills" aria-labelledby="skills-title">
+      <div class="about-skills-inner">
+        <div class="about-skills-header">
+          <div>
+            <span class="label" style="margin-bottom:1rem;display:block;">Tech Stack</span>
+            <h2 id="skills-title" class="about-skills-title" data-reveal="true">Tools &amp;<br />Technologies</h2>
+          </div>
+          <p class="approach-lead" data-reveal="true">
+            Every tool I use is chosen deliberately. I don't follow trends — I pick what's right for the project. That said, here's what I reach for most often.
+          </p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item" data-reveal="true"><p class="tech-name">React</p><p class="tech-category">UI Library</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Next.js</p><p class="tech-category">Framework</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">TypeScript</p><p class="tech-category">Language</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">GSAP</p><p class="tech-category">Animation</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Framer Motion</p><p class="tech-category">Animation</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Three.js</p><p class="tech-category">3D / WebGL</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">CSS / SCSS</p><p class="tech-category">Styling</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Figma</p><p class="tech-category">Design</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Node.js</p><p class="tech-category">Backend</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">PostgreSQL</p><p class="tech-category">Database</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Vercel</p><p class="tech-category">Deploy</p></div>
+          <div class="tech-item" data-reveal="true"><p class="tech-name">Git</p><p class="tech-category">Version Control</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach" aria-labelledby="approach-title" style="background:var(--bg-2);">
+      <div class="approach-inner">
+        <div class="approach-left">
+          <span class="label" style="display:block;margin-bottom:var(--space-4);">Working style</span>
+          <h2 id="approach-title" class="projects-title" data-reveal="true" style="font-size:clamp(1.8rem,4vw,2.8rem);">My approach</h2>
+        </div>
+        <div class="approach-right">
+          <ul class="skills-list" role="list">
+            <li class="skill-item" data-skill>
+              <span class="skill-index">01</span>
+              <div>
+                <div class="skill-label">Communication first</div>
+                <div class="skill-detail">Clear, honest updates throughout. No surprises at handoff.</div>
+              </div>
+            </li>
+            <li class="skill-item" data-skill>
+              <span class="skill-index">02</span>
+              <div>
+                <div class="skill-label">Quality over quantity</div>
+                <div class="skill-detail">I take on a limited number of projects to ensure full attention to each.</div>
+              </div>
+            </li>
+            <li class="skill-item" data-skill>
+              <span class="skill-index">03</span>
+              <div>
+                <div class="skill-label">Performance is non-negotiable</div>
+                <div class="skill-detail">Lighthouse 90+ on every project. Speed is a feature.</div>
+              </div>
+            </li>
+            <li class="skill-item" data-skill>
+              <span class="skill-index">04</span>
+              <div>
+                <div class="skill-label">Long-term thinking</div>
+                <div class="skill-detail">Clean code, documentation, and maintainable architecture from day one.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title-a">
+      <div class="cta-inner">
+        <h2 id="cta-title-a" class="cta-text" data-reveal="true">
+          Let's create<br /><em>something</em><br />together.
+        </h2>
+        <div class="cta-actions">
+          <span class="cta-label">Currently available</span>
+          <a href="contact.html" class="cta-primary">
+            <span>Start a conversation</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">Your Name</a>
+      <div class="footer-center"><p class="footer-copy">© 2025 · All rights reserved</p></div>
+      <nav class="footer-socials" aria-label="Social links">
+        <a href="#" class="footer-social" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

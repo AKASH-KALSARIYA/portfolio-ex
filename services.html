@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Your Name</title>
+  <meta name="description" content="Frontend development services: custom websites, UI development, animation, performance optimization, and ongoing support." />
+  <meta name="author" content="Your Name" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/services" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">Services</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Your Name</a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <ol class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link" aria-current="page">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ol>
+      </nav>
+      <a href="contact.html" class="nav-cta">
+        Let's talk
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+    <ol class="mobile-nav-list" role="list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link" aria-current="page">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ol>
+    <p class="mobile-nav-footer">your@email.com</p>
+  </nav>
+
+  <main id="main" class="main">
+
+    <!-- Page Hero -->
+    <section class="services-hero page-hero" aria-labelledby="services-title">
+      <div class="page-hero-inner">
+        <div class="page-hero-label">
+          <span class="page-hero-label-line" aria-hidden="true"></span>
+          <span class="label">04 / 06 — Services</span>
+        </div>
+        <h1 id="services-title" class="page-hero-title">What I<br />offer</h1>
+        <p class="page-hero-desc">
+          End-to-end frontend development. From concept to deployment, I handle design, code, animation, and performance — so you get a site that works as beautifully as it looks.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid" aria-label="Services offered">
+      <div class="services-grid-inner">
+
+        <article class="service-card" data-reveal="true">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <p class="service-num">S.01</p>
+          <h2 class="service-title">Custom Websites</h2>
+          <p class="service-desc">Bespoke frontend builds from scratch. No templates. Every pixel, interaction, and line of code written specifically for your brand and goals.</p>
+          <ul class="service-list" role="list">
+            <li class="service-list-item">Marketing & landing pages</li>
+            <li class="service-list-item">Portfolio & agency sites</li>
+            <li class="service-list-item">Product & startup websites</li>
+            <li class="service-list-item">Editorial & magazine layouts</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-reveal="true">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="service-num">S.02</p>
+          <h2 class="service-title">UI Development</h2>
+          <p class="service-desc">Pixel-perfect implementation of Figma designs. Component libraries, design systems, and interactive interfaces built with React and TypeScript.</p>
+          <ul class="service-list" role="list">
+            <li class="service-list-item">React / Next.js development</li>
+            <li class="service-list-item">Component library creation</li>
+            <li class="service-list-item">Design system implementation</li>
+            <li class="service-list-item">Figma-to-code handoff</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-reveal="true">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M5 12c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+          </div>
+          <p class="service-num">S.03</p>
+          <h2 class="service-title">Animation &amp; Motion</h2>
+          <p class="service-desc">Scroll-driven storytelling, micro-interactions, page transitions, and immersive experiences using GSAP, Framer Motion, and CSS animations.</p>
+          <ul class="service-list" role="list">
+            <li class="service-list-item">GSAP & ScrollTrigger</li>
+            <li class="service-list-item">Framer Motion animations</li>
+            <li class="service-list-item">Page transitions</li>
+            <li class="service-list-item">Micro-interaction design</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-reveal="true">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="service-num">S.04</p>
+          <h2 class="service-title">Performance &amp; SEO</h2>
+          <p class="service-desc">Fast sites rank higher and convert better. Core Web Vitals optimization, structured data, semantic HTML, and Lighthouse audits targeting 90+.</p>
+          <ul class="service-list" role="list">
+            <li class="service-list-item">Core Web Vitals optimization</li>
+            <li class="service-list-item">Lighthouse audits</li>
+            <li class="service-list-item">Technical SEO implementation</li>
+            <li class="service-list-item">Structured data & meta tags</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Process section -->
+    <section class="process" aria-labelledby="process-title-s">
+      <div class="process-inner">
+        <div class="process-header">
+          <p class="section-index" data-reveal="true">P.01 — P.03</p>
+          <h2 id="process-title-s" class="process-title" data-reveal="true">The process</h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step" data-reveal="true">
+            <p class="process-step-num">P.01</p>
+            <h3 class="process-step-title">Discovery</h3>
+            <p class="process-step-text">A deep dive into your brand, goals, and audience. I ask questions others don't, to ensure every decision is grounded in intention.</p>
+          </div>
+          <div class="process-step" data-reveal="true" style="transition-delay:0.15s">
+            <p class="process-step-num">P.02</p>
+            <h3 class="process-step-title">Design &amp; Build</h3>
+            <p class="process-step-text">From initial concepts to final code — I iterate rapidly with clear milestones. You're involved at every key decision point.</p>
+          </div>
+          <div class="process-step" data-reveal="true" style="transition-delay:0.3s">
+            <p class="process-step-num">P.03</p>
+            <h3 class="process-step-title">Launch &amp; Support</h3>
+            <p class="process-step-text">Careful deployment, testing across browsers and devices, and documentation. Ongoing support options available after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title-s">
+      <div class="cta-inner">
+        <h2 id="cta-title-s" class="cta-text" data-reveal="true">
+          Ready to start<br /><em>your project?</em>
+        </h2>
+        <div class="cta-actions">
+          <span class="cta-label">Free initial consultation</span>
+          <a href="contact.html" class="cta-primary">
+            <span>Get a quote</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">Your Name</a>
+      <div class="footer-center"><p class="footer-copy">© 2025 · All rights reserved</p></div>
+      <nav class="footer-socials" aria-label="Social links">
+        <a href="#" class="footer-social" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

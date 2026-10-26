@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Your Name</title>
+  <meta name="description" content="A selection of frontend projects — clients and personal studies. Custom websites, interactive interfaces, and animated experiences." />
+  <meta name="author" content="Your Name" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/projects" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">Projects</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Your Name</a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <ol class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ol>
+      </nav>
+      <a href="contact.html" class="nav-cta">
+        Let's talk
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+    <ol class="mobile-nav-list" role="list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link" aria-current="page">Projects</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ol>
+    <p class="mobile-nav-footer">your@email.com</p>
+  </nav>
+
+  <main id="main" class="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero-inner">
+        <div class="page-hero-label">
+          <span class="page-hero-label-line" aria-hidden="true"></span>
+          <span class="label">03 / 06</span>
+        </div>
+        <h1 id="page-title" class="page-hero-title">Selected<br />Projects</h1>
+        <p class="page-hero-desc">
+          A curated selection of client work and personal studies. Each project is approached as an editorial object — performance, animation, and typographic detail working together.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section" aria-label="Projects grid">
+      <div class="projects-grid">
+
+        <!-- Wide featured project -->
+        <article class="project-card-wide" data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-1">
+            <div class="project-visual">
+              <img src="img/project-ecommerce.png" alt="ShopCraft E-Commerce Platform" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+              <div class="project-visual-overlay" aria-hidden="true">
+                <span class="project-card-index">01</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Client</li>
+                  <li class="project-tag">E-Commerce</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">ShopCraft</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Custom E-Commerce Platform</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>Next.js · Stripe · GSAP · TypeScript</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2025</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <!-- Regular projects -->
+        <article data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-2">
+            <div class="project-visual">
+              <img src="img/project-saas.png" alt="Analytiq SaaS Dashboard" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+              <div class="project-visual-overlay" aria-hidden="true">
+                <span class="project-card-index">02</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Study</li>
+                  <li class="project-tag">SaaS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">Analytiq</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Editorial Concept</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>React · TypeScript · D3.js</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2025</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <article data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-3">
+            <div class="project-visual">
+              <img src="img/project-portfolio.png" alt="Aether Studio Portfolio" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+              <div class="project-visual-overlay" aria-hidden="true">
+                <span class="project-card-index">03</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Studio</li>
+                  <li class="project-tag">Creative</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">Aether Studio</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Frontend Direction</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>Next.js · GSAP · Lenis</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2025</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <article data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-4">
+            <div class="project-visual">
+              <img src="img/project-mobile.png" alt="PulseTrack Mobile App" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+              <div class="project-visual-overlay" aria-hidden="true">
+                <span class="project-card-index">04</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Lab</li>
+                  <li class="project-tag">R&amp;D</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">PulseTrack</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Animation Exploration</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>React · Framer Motion · CSS</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2024</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <article data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-5">
+            <div class="project-visual">
+              <img src="img/project-landing.png" alt="NovaCrypt Landing Page" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+              <div class="project-visual-overlay" aria-hidden="true">
+                <span class="project-card-index">05</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Client</li>
+                  <li class="project-tag">Startup</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">NovaCrypt</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Custom Website</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>Next.js · GSAP · Three.js</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2024</dd></div>
+              </dl>
+
+            </div>
+          </a>
+        </article>
+
+        <article data-reveal="true">
+          <a href="#" class="project-card" id="proj-grid-6">
+            <div class="project-visual">
+              <img src="img/project-restaurant.png" alt="Maison Élite Restaurant Website" loading="lazy" />
+              <span class="project-visual-glow" aria-hidden="true"></span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-card-index">06</span>
+                <ul class="project-tags" role="list">
+                  <li class="project-tag">Client</li>
+                  <li class="project-tag">Hospitality</li>
+                </ul>
+              </div>
+              <h2 class="project-card-title">Maison Élite</h2>
+              <dl class="project-meta">
+                <div class="project-meta-row"><dt>Type</dt><dd>Custom Website</dd></div>
+                <div class="project-meta-row"><dt>Stack</dt><dd>WordPress · GSAP · CSS</dd></div>
+                <div class="project-meta-row"><dt>Year</dt><dd>/ 2024</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title-p">
+      <div class="cta-inner">
+        <h2 id="cta-title-p" class="cta-text" data-reveal="true">
+          Want to work<br /><em>together?</em>
+        </h2>
+        <div class="cta-actions">
+          <span class="cta-label">Available for new projects</span>
+          <a href="contact.html" class="cta-primary">
+            <span>Get in touch</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">Your Name</a>
+      <div class="footer-center"><p class="footer-copy">© 2025 · All rights reserved</p></div>
+      <nav class="footer-socials" aria-label="Social links">
+        <a href="#" class="footer-social" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="footer-social" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
